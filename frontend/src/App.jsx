@@ -5,6 +5,9 @@ import Login from "./components/Login.jsx";
 import Signup from "./components/Signup.jsx";
 import Contact from "./components/Contact/Contact.jsx"; 
 import About from "./components/About.jsx";
+import DonorDashboard from "./components/dashboard/DonorDashboard";
+import NGOsDashboard from "./components/NGOsDash/NGOsDashboard.jsx";
+import AppLayout from "./components/layout/AppLayout.jsx";
 
 function App() {
   return (
@@ -16,6 +19,10 @@ function App() {
         <Route path="/register" element={<Signup />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/dashboard" element={<DonorDashboard />} />
+        <Route path="/NGOsdashboard" element={<NGOsDashboard />} />
+        <Route path="/Applayout" element={<AppLayout />} />
+
       </Routes>
     </BrowserRouter>
   );
